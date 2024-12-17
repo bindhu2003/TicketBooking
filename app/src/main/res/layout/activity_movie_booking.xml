@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Movie name TextView -->
+    <TextView
+        android:id="@+id/movieTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Movie"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <!-- Date selection TextView -->
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <!-- Time selection TextView -->
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <!-- Button to proceed with booking -->
+    <Button
+        android:id="@+id/btnSelectMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Movie"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp" />
+</LinearLayout>

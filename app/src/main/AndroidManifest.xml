@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlineTicketBookingApp"
+        tools:targetApi="31">
+
+        <!-- Splash Activity: Set as the Launcher Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Homepage Activity -->
+        <activity
+            android:name=".HomepageActivity"
+            android:exported="true" />
+
+        <!-- Movie Booking Activity -->
+        <activity
+            android:name=".MovieBookingActivity"
+            android:exported="true" />
+
+        <!-- Booking Confirmation Activity -->
+        <activity
+            android:name=".BookingConfirmationActivity"
+            android:exported="true" />
+
+        <!-- Temple Booking Activity -->
+        <activity
+            android:name=".TempleBookingActivity"
+            android:exported="true" />
+
+        <!-- Theatre Booking Activity -->
+        <activity
+            android:name=".TheatreBookingActivity"
+            android:exported="true" />
+
+        <!-- Tourist Booking Activity -->
+        <activity
+            android:name=".TouristBookingActivity"
+            android:exported="true" />
+
+        <!-- Restaurant Booking Activity -->
+        <activity
+            android:name=".RestaurantBookingActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

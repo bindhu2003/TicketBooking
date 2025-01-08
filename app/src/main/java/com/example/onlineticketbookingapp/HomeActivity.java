@@ -2,8 +2,7 @@ package com.example.onlineticketbookingapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -11,36 +10,30 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home); // Ensure this matches the layout file
+        setContentView(R.layout.activity_home);
 
-        // Temples button click
-        Button btnTemples = findViewById(R.id.btnTemples);
-        btnTemples.setOnClickListener(v -> {
-            // Navigate to the Temple booking screen
+        // Update to ImageButton
+        ImageButton btnTemple = findViewById(R.id.btnTemple);
+        ImageButton btnTheatre = findViewById(R.id.btnTheatre);
+        ImageButton btnTourism = findViewById(R.id.btnTourism);
+        ImageButton btnRestaurant = findViewById(R.id.btnRestaurant);
+
+        btnTemple.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, TempleBookingActivity.class);
             startActivity(intent);
         });
 
-        // Theatres button click
-        Button btnTheatres = findViewById(R.id.btnTheatres);
-        btnTheatres.setOnClickListener(v -> {
-            // Navigate to the Theatre booking screen
+        btnTheatre.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, TheatreBookingActivity.class);
             startActivity(intent);
         });
 
-        // Tourist Places button click
-        Button btnTouristPlaces = findViewById(R.id.btnTouristPlaces);
-        btnTouristPlaces.setOnClickListener(v -> {
-            // Navigate to the Tourist Place booking screen
+        btnTourism.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, TouristBookingActivity.class);
             startActivity(intent);
         });
 
-        // Restaurants button click
-        Button btnRestaurants = findViewById(R.id.btnRestaurants);
-        btnRestaurants.setOnClickListener(v -> {
-            // Navigate to the Restaurant booking screen
+        btnRestaurant.setOnClickListener(view -> {
             Intent intent = new Intent(HomeActivity.this, RestaurantBookingActivity.class);
             startActivity(intent);
         });

@@ -2,25 +2,19 @@ package com.example.onlineticketbookingapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnBookMovie = findViewById(R.id.btnBookMovie);
-        btnBookMovie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Starting the MovieBookingActivity when the button is clicked
-                Intent intent = new Intent(MainActivity.this, MovieBookingActivity.class);
-                startActivity(intent);
-            }
-        });
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
+        }, 2000); // 2 seconds delay
     }
 }

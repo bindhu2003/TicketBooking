@@ -1,26 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Heading for Tourist Booking -->
     <TextView
+        android:id="@+id/tvTouristPlaceName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a Tourist Place"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
+        android:text="Tourist Place Name"
+        android:textSize="18sp" />
 
-    <!-- Button for booking a tourist place -->
+    <EditText
+        android:id="@+id/etNumberOfTickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of tickets"
+        android:inputType="number" />
+
     <Button
-        android:id="@+id/btnBookTouristPlace"
+        android:id="@+id/btnSelectDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Tourist Place"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp" />
+        android:text="Select Date" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date not selected" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: ₹0"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnBookNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Now" />
 
 </LinearLayout>

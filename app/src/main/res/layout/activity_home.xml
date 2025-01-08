@@ -1,41 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <!-- Button for Temples -->
-    <Button
-        android:id="@+id/btnTemples"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Temples"
-        android:layout_marginTop="20dp" />
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
-    <!-- Button for Theatres -->
-    <Button
-        android:id="@+id/btnTheatres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Theatres"
-        android:layout_marginTop="20dp" />
+        <ImageButton
+            android:id="@+id/btnTemple"
+            android:layout_width="272dp"
+            android:layout_height="155dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Temple"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temple_image" />
 
-    <!-- Button for Tourist Places -->
-    <Button
-        android:id="@+id/btnTouristPlaces"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tourist Places"
-        android:layout_marginTop="20dp" />
+        <ImageButton
+            android:id="@+id/btnTheatre"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Theatre"
+            android:scaleType="centerCrop"
+            android:src="@drawable/theatre_image" />
 
-    <!-- Button for Restaurants -->
-    <Button
-        android:id="@+id/btnRestaurants"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restaurants"
-        android:layout_marginTop="20dp" />
+        <ImageButton
+            android:id="@+id/btnTourism"
+            android:layout_width="285dp"
+            android:layout_height="167dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Tourism"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tourist_image" />
 
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/btnRestaurant"
+            android:layout_width="305dp"
+            android:layout_height="175dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Restaurant"
+            android:scaleType="centerCrop"
+            android:src="@drawable/restaurant_image" />
+
+    </LinearLayout>
+</ScrollView>
